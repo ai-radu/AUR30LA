@@ -1,0 +1,3 @@
+/home/ai/AUR30LA/build/CMakeFiles/AUR30LA.dir
+/home/ai/AUR30LA/build/CMakeFiles/edit_cache.dir
+/home/ai/AUR30LA/build/CMakeFiles/rebuild_cache.dir
