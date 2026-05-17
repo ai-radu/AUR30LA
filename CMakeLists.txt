@@ -12,8 +12,7 @@ find_package(glfw3 REQUIRED)
 
 add_executable(AUR30LA
     src/config.h
-    src/config.cpp
-    src/main.cpp 
+    src/main.cpp
     src/glad.c
     src/systems/camera_system.cpp
     src/systems/motion_system.cpp
@@ -40,6 +39,12 @@ target_include_directories(AUR30LA PRIVATE
 
 target_compile_definitions(AUR30LA PRIVATE
     IMGUI_IMPL_OPENGL_LOADER_GLAD
+)
+
+target_compile_definitions(AUR30LA PRIVATE
+    AUR_DEBUG=0
+    AUR_EXPERIMENTAL=0
+    AUR_EXPERIMENTAL_DEBUG=0
 )
 
 target_link_libraries(AUR30LA

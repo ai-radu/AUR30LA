@@ -17,11 +17,11 @@
 #include <time.h>
 #include <ctime>
 
+#include "engine.h"
+
 #define IMGUI_DEFINE_MATH_OPERATORS
 #include <cmath>
 
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
-
-void say(const std::string& words, int error = 0, bool refresh = false);

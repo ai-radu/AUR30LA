@@ -44,19 +44,8 @@ cmake_ninja_workdir = /home/ai/AUR30LA/build/
 
 build cmake_object_order_depends_target_AUR30LA: phony || .
 
-build CMakeFiles/AUR30LA.dir/src/config.cpp.o: CXX_COMPILER__AUR30LA_unscanned_ /home/ai/AUR30LA/src/config.cpp || cmake_object_order_depends_target_AUR30LA
-  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
-  DEP_FILE = CMakeFiles/AUR30LA.dir/src/config.cpp.o.d
-  FLAGS = -std=c++23
-  INCLUDES = -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/dependencies -I/home/ai/AUR30LA/dependencies/glad/include -I/home/ai/AUR30LA/imgui -I/home/ai/AUR30LA/imgui/backends
-  OBJECT_DIR = CMakeFiles/AUR30LA.dir
-  OBJECT_FILE_DIR = CMakeFiles/AUR30LA.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/AUR30LA.dir/
-  TARGET_PDB = AUR30LA.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles/AUR30LA.dir
-
 build CMakeFiles/AUR30LA.dir/src/main.cpp.o: CXX_COMPILER__AUR30LA_unscanned_ /home/ai/AUR30LA/src/main.cpp || cmake_object_order_depends_target_AUR30LA
-  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
+  DEFINES = -DAUR_DEBUG=1 -DAUR_EXPERIMENTAL=0 -DAUR_EXPERIMENTAL_DEBUG=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD
   DEP_FILE = CMakeFiles/AUR30LA.dir/src/main.cpp.o.d
   FLAGS = -std=c++23
   INCLUDES = -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/dependencies -I/home/ai/AUR30LA/dependencies/glad/include -I/home/ai/AUR30LA/imgui -I/home/ai/AUR30LA/imgui/backends
@@ -67,7 +56,7 @@ build CMakeFiles/AUR30LA.dir/src/main.cpp.o: CXX_COMPILER__AUR30LA_unscanned_ /h
   TARGET_SUPPORT_DIR = CMakeFiles/AUR30LA.dir
 
 build CMakeFiles/AUR30LA.dir/src/glad.c.o: C_COMPILER__AUR30LA_unscanned_ /home/ai/AUR30LA/src/glad.c || cmake_object_order_depends_target_AUR30LA
-  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
+  DEFINES = -DAUR_DEBUG=1 -DAUR_EXPERIMENTAL=0 -DAUR_EXPERIMENTAL_DEBUG=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD
   DEP_FILE = CMakeFiles/AUR30LA.dir/src/glad.c.o.d
   INCLUDES = -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/dependencies -I/home/ai/AUR30LA/dependencies/glad/include -I/home/ai/AUR30LA/imgui -I/home/ai/AUR30LA/imgui/backends
   OBJECT_DIR = CMakeFiles/AUR30LA.dir
@@ -77,7 +66,7 @@ build CMakeFiles/AUR30LA.dir/src/glad.c.o: C_COMPILER__AUR30LA_unscanned_ /home/
   TARGET_SUPPORT_DIR = CMakeFiles/AUR30LA.dir
 
 build CMakeFiles/AUR30LA.dir/src/systems/camera_system.cpp.o: CXX_COMPILER__AUR30LA_unscanned_ /home/ai/AUR30LA/src/systems/camera_system.cpp || cmake_object_order_depends_target_AUR30LA
-  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
+  DEFINES = -DAUR_DEBUG=1 -DAUR_EXPERIMENTAL=0 -DAUR_EXPERIMENTAL_DEBUG=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD
   DEP_FILE = CMakeFiles/AUR30LA.dir/src/systems/camera_system.cpp.o.d
   FLAGS = -std=c++23
   INCLUDES = -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/dependencies -I/home/ai/AUR30LA/dependencies/glad/include -I/home/ai/AUR30LA/imgui -I/home/ai/AUR30LA/imgui/backends
@@ -88,7 +77,7 @@ build CMakeFiles/AUR30LA.dir/src/systems/camera_system.cpp.o: CXX_COMPILER__AUR3
   TARGET_SUPPORT_DIR = CMakeFiles/AUR30LA.dir
 
 build CMakeFiles/AUR30LA.dir/src/systems/motion_system.cpp.o: CXX_COMPILER__AUR30LA_unscanned_ /home/ai/AUR30LA/src/systems/motion_system.cpp || cmake_object_order_depends_target_AUR30LA
-  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
+  DEFINES = -DAUR_DEBUG=1 -DAUR_EXPERIMENTAL=0 -DAUR_EXPERIMENTAL_DEBUG=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD
   DEP_FILE = CMakeFiles/AUR30LA.dir/src/systems/motion_system.cpp.o.d
   FLAGS = -std=c++23
   INCLUDES = -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/dependencies -I/home/ai/AUR30LA/dependencies/glad/include -I/home/ai/AUR30LA/imgui -I/home/ai/AUR30LA/imgui/backends
@@ -99,7 +88,7 @@ build CMakeFiles/AUR30LA.dir/src/systems/motion_system.cpp.o: CXX_COMPILER__AUR3
   TARGET_SUPPORT_DIR = CMakeFiles/AUR30LA.dir
 
 build CMakeFiles/AUR30LA.dir/src/systems/render_system.cpp.o: CXX_COMPILER__AUR30LA_unscanned_ /home/ai/AUR30LA/src/systems/render_system.cpp || cmake_object_order_depends_target_AUR30LA
-  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
+  DEFINES = -DAUR_DEBUG=1 -DAUR_EXPERIMENTAL=0 -DAUR_EXPERIMENTAL_DEBUG=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD
   DEP_FILE = CMakeFiles/AUR30LA.dir/src/systems/render_system.cpp.o.d
   FLAGS = -std=c++23
   INCLUDES = -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/dependencies -I/home/ai/AUR30LA/dependencies/glad/include -I/home/ai/AUR30LA/imgui -I/home/ai/AUR30LA/imgui/backends
@@ -110,7 +99,7 @@ build CMakeFiles/AUR30LA.dir/src/systems/render_system.cpp.o: CXX_COMPILER__AUR3
   TARGET_SUPPORT_DIR = CMakeFiles/AUR30LA.dir
 
 build CMakeFiles/AUR30LA.dir/src/view/shader.cpp.o: CXX_COMPILER__AUR30LA_unscanned_ /home/ai/AUR30LA/src/view/shader.cpp || cmake_object_order_depends_target_AUR30LA
-  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
+  DEFINES = -DAUR_DEBUG=1 -DAUR_EXPERIMENTAL=0 -DAUR_EXPERIMENTAL_DEBUG=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD
   DEP_FILE = CMakeFiles/AUR30LA.dir/src/view/shader.cpp.o.d
   FLAGS = -std=c++23
   INCLUDES = -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/dependencies -I/home/ai/AUR30LA/dependencies/glad/include -I/home/ai/AUR30LA/imgui -I/home/ai/AUR30LA/imgui/backends
@@ -121,7 +110,7 @@ build CMakeFiles/AUR30LA.dir/src/view/shader.cpp.o: CXX_COMPILER__AUR30LA_unscan
   TARGET_SUPPORT_DIR = CMakeFiles/AUR30LA.dir
 
 build CMakeFiles/AUR30LA.dir/src/controller/app.cpp.o: CXX_COMPILER__AUR30LA_unscanned_ /home/ai/AUR30LA/src/controller/app.cpp || cmake_object_order_depends_target_AUR30LA
-  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
+  DEFINES = -DAUR_DEBUG=1 -DAUR_EXPERIMENTAL=0 -DAUR_EXPERIMENTAL_DEBUG=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD
   DEP_FILE = CMakeFiles/AUR30LA.dir/src/controller/app.cpp.o.d
   FLAGS = -std=c++23
   INCLUDES = -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/dependencies -I/home/ai/AUR30LA/dependencies/glad/include -I/home/ai/AUR30LA/imgui -I/home/ai/AUR30LA/imgui/backends
@@ -132,7 +121,7 @@ build CMakeFiles/AUR30LA.dir/src/controller/app.cpp.o: CXX_COMPILER__AUR30LA_uns
   TARGET_SUPPORT_DIR = CMakeFiles/AUR30LA.dir
 
 build CMakeFiles/AUR30LA.dir/imgui/backends/imgui_impl_glfw.cpp.o: CXX_COMPILER__AUR30LA_unscanned_ /home/ai/AUR30LA/imgui/backends/imgui_impl_glfw.cpp || cmake_object_order_depends_target_AUR30LA
-  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
+  DEFINES = -DAUR_DEBUG=1 -DAUR_EXPERIMENTAL=0 -DAUR_EXPERIMENTAL_DEBUG=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD
   DEP_FILE = CMakeFiles/AUR30LA.dir/imgui/backends/imgui_impl_glfw.cpp.o.d
   FLAGS = -std=c++23
   INCLUDES = -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/dependencies -I/home/ai/AUR30LA/dependencies/glad/include -I/home/ai/AUR30LA/imgui -I/home/ai/AUR30LA/imgui/backends
@@ -143,7 +132,7 @@ build CMakeFiles/AUR30LA.dir/imgui/backends/imgui_impl_glfw.cpp.o: CXX_COMPILER_
   TARGET_SUPPORT_DIR = CMakeFiles/AUR30LA.dir
 
 build CMakeFiles/AUR30LA.dir/imgui/backends/imgui_impl_opengl3.cpp.o: CXX_COMPILER__AUR30LA_unscanned_ /home/ai/AUR30LA/imgui/backends/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_AUR30LA
-  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
+  DEFINES = -DAUR_DEBUG=1 -DAUR_EXPERIMENTAL=0 -DAUR_EXPERIMENTAL_DEBUG=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD
   DEP_FILE = CMakeFiles/AUR30LA.dir/imgui/backends/imgui_impl_opengl3.cpp.o.d
   FLAGS = -std=c++23
   INCLUDES = -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/dependencies -I/home/ai/AUR30LA/dependencies/glad/include -I/home/ai/AUR30LA/imgui -I/home/ai/AUR30LA/imgui/backends
@@ -154,7 +143,7 @@ build CMakeFiles/AUR30LA.dir/imgui/backends/imgui_impl_opengl3.cpp.o: CXX_COMPIL
   TARGET_SUPPORT_DIR = CMakeFiles/AUR30LA.dir
 
 build CMakeFiles/AUR30LA.dir/imgui/imgui_tables.cpp.o: CXX_COMPILER__AUR30LA_unscanned_ /home/ai/AUR30LA/imgui/imgui_tables.cpp || cmake_object_order_depends_target_AUR30LA
-  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
+  DEFINES = -DAUR_DEBUG=1 -DAUR_EXPERIMENTAL=0 -DAUR_EXPERIMENTAL_DEBUG=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD
   DEP_FILE = CMakeFiles/AUR30LA.dir/imgui/imgui_tables.cpp.o.d
   FLAGS = -std=c++23
   INCLUDES = -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/dependencies -I/home/ai/AUR30LA/dependencies/glad/include -I/home/ai/AUR30LA/imgui -I/home/ai/AUR30LA/imgui/backends
@@ -165,7 +154,7 @@ build CMakeFiles/AUR30LA.dir/imgui/imgui_tables.cpp.o: CXX_COMPILER__AUR30LA_uns
   TARGET_SUPPORT_DIR = CMakeFiles/AUR30LA.dir
 
 build CMakeFiles/AUR30LA.dir/imgui/imgui_widgets.cpp.o: CXX_COMPILER__AUR30LA_unscanned_ /home/ai/AUR30LA/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_AUR30LA
-  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
+  DEFINES = -DAUR_DEBUG=1 -DAUR_EXPERIMENTAL=0 -DAUR_EXPERIMENTAL_DEBUG=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD
   DEP_FILE = CMakeFiles/AUR30LA.dir/imgui/imgui_widgets.cpp.o.d
   FLAGS = -std=c++23
   INCLUDES = -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/dependencies -I/home/ai/AUR30LA/dependencies/glad/include -I/home/ai/AUR30LA/imgui -I/home/ai/AUR30LA/imgui/backends
@@ -176,7 +165,7 @@ build CMakeFiles/AUR30LA.dir/imgui/imgui_widgets.cpp.o: CXX_COMPILER__AUR30LA_un
   TARGET_SUPPORT_DIR = CMakeFiles/AUR30LA.dir
 
 build CMakeFiles/AUR30LA.dir/imgui/imgui_draw.cpp.o: CXX_COMPILER__AUR30LA_unscanned_ /home/ai/AUR30LA/imgui/imgui_draw.cpp || cmake_object_order_depends_target_AUR30LA
-  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
+  DEFINES = -DAUR_DEBUG=1 -DAUR_EXPERIMENTAL=0 -DAUR_EXPERIMENTAL_DEBUG=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD
   DEP_FILE = CMakeFiles/AUR30LA.dir/imgui/imgui_draw.cpp.o.d
   FLAGS = -std=c++23
   INCLUDES = -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/dependencies -I/home/ai/AUR30LA/dependencies/glad/include -I/home/ai/AUR30LA/imgui -I/home/ai/AUR30LA/imgui/backends
@@ -187,7 +176,7 @@ build CMakeFiles/AUR30LA.dir/imgui/imgui_draw.cpp.o: CXX_COMPILER__AUR30LA_unsca
   TARGET_SUPPORT_DIR = CMakeFiles/AUR30LA.dir
 
 build CMakeFiles/AUR30LA.dir/imgui/imgui.cpp.o: CXX_COMPILER__AUR30LA_unscanned_ /home/ai/AUR30LA/imgui/imgui.cpp || cmake_object_order_depends_target_AUR30LA
-  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
+  DEFINES = -DAUR_DEBUG=1 -DAUR_EXPERIMENTAL=0 -DAUR_EXPERIMENTAL_DEBUG=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD
   DEP_FILE = CMakeFiles/AUR30LA.dir/imgui/imgui.cpp.o.d
   FLAGS = -std=c++23
   INCLUDES = -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/dependencies -I/home/ai/AUR30LA/dependencies/glad/include -I/home/ai/AUR30LA/imgui -I/home/ai/AUR30LA/imgui/backends
@@ -198,7 +187,7 @@ build CMakeFiles/AUR30LA.dir/imgui/imgui.cpp.o: CXX_COMPILER__AUR30LA_unscanned_
   TARGET_SUPPORT_DIR = CMakeFiles/AUR30LA.dir
 
 build CMakeFiles/AUR30LA.dir/imgui/imgui_demo.cpp.o: CXX_COMPILER__AUR30LA_unscanned_ /home/ai/AUR30LA/imgui/imgui_demo.cpp || cmake_object_order_depends_target_AUR30LA
-  DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
+  DEFINES = -DAUR_DEBUG=1 -DAUR_EXPERIMENTAL=0 -DAUR_EXPERIMENTAL_DEBUG=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD
   DEP_FILE = CMakeFiles/AUR30LA.dir/imgui/imgui_demo.cpp.o.d
   FLAGS = -std=c++23
   INCLUDES = -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/dependencies -I/home/ai/AUR30LA/dependencies/glad/include -I/home/ai/AUR30LA/imgui -I/home/ai/AUR30LA/imgui/backends
@@ -216,7 +205,7 @@ build CMakeFiles/AUR30LA.dir/imgui/imgui_demo.cpp.o: CXX_COMPILER__AUR30LA_unsca
 #############################################
 # Link the executable AUR30LA
 
-build AUR30LA: CXX_EXECUTABLE_LINKER__AUR30LA_ CMakeFiles/AUR30LA.dir/src/config.cpp.o CMakeFiles/AUR30LA.dir/src/main.cpp.o CMakeFiles/AUR30LA.dir/src/glad.c.o CMakeFiles/AUR30LA.dir/src/systems/camera_system.cpp.o CMakeFiles/AUR30LA.dir/src/systems/motion_system.cpp.o CMakeFiles/AUR30LA.dir/src/systems/render_system.cpp.o CMakeFiles/AUR30LA.dir/src/view/shader.cpp.o CMakeFiles/AUR30LA.dir/src/controller/app.cpp.o CMakeFiles/AUR30LA.dir/imgui/backends/imgui_impl_glfw.cpp.o CMakeFiles/AUR30LA.dir/imgui/backends/imgui_impl_opengl3.cpp.o CMakeFiles/AUR30LA.dir/imgui/imgui_tables.cpp.o CMakeFiles/AUR30LA.dir/imgui/imgui_widgets.cpp.o CMakeFiles/AUR30LA.dir/imgui/imgui_draw.cpp.o CMakeFiles/AUR30LA.dir/imgui/imgui.cpp.o CMakeFiles/AUR30LA.dir/imgui/imgui_demo.cpp.o | /usr/lib/x86_64-linux-gnu/libglfw.so.3.4 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so
+build AUR30LA: CXX_EXECUTABLE_LINKER__AUR30LA_ CMakeFiles/AUR30LA.dir/src/main.cpp.o CMakeFiles/AUR30LA.dir/src/glad.c.o CMakeFiles/AUR30LA.dir/src/systems/camera_system.cpp.o CMakeFiles/AUR30LA.dir/src/systems/motion_system.cpp.o CMakeFiles/AUR30LA.dir/src/systems/render_system.cpp.o CMakeFiles/AUR30LA.dir/src/view/shader.cpp.o CMakeFiles/AUR30LA.dir/src/controller/app.cpp.o CMakeFiles/AUR30LA.dir/imgui/backends/imgui_impl_glfw.cpp.o CMakeFiles/AUR30LA.dir/imgui/backends/imgui_impl_opengl3.cpp.o CMakeFiles/AUR30LA.dir/imgui/imgui_tables.cpp.o CMakeFiles/AUR30LA.dir/imgui/imgui_widgets.cpp.o CMakeFiles/AUR30LA.dir/imgui/imgui_draw.cpp.o CMakeFiles/AUR30LA.dir/imgui/imgui.cpp.o CMakeFiles/AUR30LA.dir/imgui/imgui_demo.cpp.o | /usr/lib/x86_64-linux-gnu/libglfw.so.3.4 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so
   DEP_FILE = CMakeFiles/AUR30LA.dir/link.d
   LINK_FLAGS = -Wl,--dependency-file=CMakeFiles/AUR30LA.dir/link.d
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libglfw.so.3.4  /usr/lib/x86_64-linux-gnu/libGLX.so  /usr/lib/x86_64-linux-gnu/libOpenGL.so

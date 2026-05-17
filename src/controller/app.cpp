@@ -1,5 +1,6 @@
 #include "app.h"
 #include "../stb_image.h"
+#include "engine.h"
 
 App::App() {
     set_up_glfw();
@@ -106,16 +107,7 @@ unsigned int App::make_texture(const char* filename) {
     glBindTexture(GL_TEXTURE_2D, texture);
 	
     // load it
-    glTexImage2D(
-        GL_TEXTURE_2D, // target texture
-        0, // LOD
-        GL_RGBA, // nr of color comps
-        width,
-        height,
-        0, // border
-        GL_RGBA, // format
-        GL_UNSIGNED_BYTE, // type
-        data);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
 
     // delete
 	stbi_image_free(data);
@@ -143,33 +135,20 @@ static void framebuffer_size_callback(GLFWwindow* window, int w, int h) {
 
 void App::update_projection() {
     glUseProgram(shader);
-
-    glm::mat4 projection = glm::perspective(
-        glm::radians(45.0f),
-        (float)screenW / (float)screenH,
-        0.01f,
-        100.0f
-    );
-
-    glUniformMatrix4fv(
-        glGetUniformLocation(shader, "projection"),
-        1,
-        GL_FALSE,
-        glm::value_ptr(projection)
-    );
+    glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)screenW / (float)screenH, 0.01f, 100.0f);
+    glUniformMatrix4fv(glGetUniformLocation(shader, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
 }
 
 void App::run() {
     glfwSetWindowUserPointer(window, this);
-    // Setup Dear ImGui context
+
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImGuiIO& io = ImGui::GetIO();
-    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
-    io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;      // Enable Gamepad Controls
-    // io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;         // IF using Docking Branch
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;
+    io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
 
-    // Setup Platform/Renderer backends
     ImGui_ImplGlfw_InitForOpenGL(window, true);
     ImGui_ImplOpenGL3_Init();
     
@@ -187,29 +166,132 @@ void App::run() {
         if (show_demo_window)
             ImGui::ShowDemoWindow(&show_demo_window);
         {
-            ImGui::Begin("WOW", NULL, ImGuiWindowFlags_AlwaysAutoResize);
+            ImGui::Begin("Editor", NULL, ImGuiWindowFlags_MenuBar);
+            
+            if (ImGui::BeginMenuBar()) { 
+                if (ImGui::BeginMenu("File")) {
+                    if (ImGui::MenuItem("Exit", "Alt+F4")) aur.askExit = true;
+                    ImGui::EndMenu();
+                }
+
+                if (ImGui::BeginMenu("Others")) {
+                    if (ImGui::MenuItem("Dear ImGui")) {
+                        system("xdg-open https://github.com/ocornut/imgui");
+                    }
+                    if (ImGui::IsItemHovered()) {
+                        ImGui::SetTooltip("Open 'https://github.com/ocornut/imgui'");
+                    }
+                    
+                    if (ImGui::MenuItem("Glad")) {
+                        system("xdg-open https://github.com/Dav1dde/glad");
+                    }
+                    if (ImGui::IsItemHovered()) {
+                        ImGui::SetTooltip("Open 'https://github.com/Dav1dde/glad'");
+                    }
+                    
+                    if (ImGui::MenuItem("GLFW")) {
+                        system("xdg-open https://github.com/glfw/glfw");
+                    }
+                    if (ImGui::IsItemHovered()) {
+                        ImGui::SetTooltip("Open 'https://github.com/glfw/glfw'");
+                    }
+                    
+                    if (ImGui::MenuItem("OpenGL Mathematics")) {
+                        system("xdg-open https://github.com/g-truc/glm");
+                    }
+                    if (ImGui::IsItemHovered()) {
+                        ImGui::SetTooltip("Open 'https://github.com/g-truc/glm'");
+                    }
+
+                    if (ImGui::MenuItem("Khronos")) {
+                        system("xdg-open https://www.khronos.org/");
+                    }
+                    if (ImGui::IsItemHovered()) {
+                        ImGui::SetTooltip("Open 'https://www.khronos.org/'");
+                    }
+
+                    if (ImGui::MenuItem("OpenGL")) {
+                        system("xdg-open https://www.opengl.org/");
+                    }
+                    if (ImGui::IsItemHovered()) {
+                        ImGui::SetTooltip("Open 'https://www.opengl.org/'");
+                    }
+                    
+                    if (ImGui::MenuItem("stb")) {
+                        system("xdg-open https://github.com/nothings/stb");
+                    }
+                    if (ImGui::IsItemHovered()) {
+                        ImGui::SetTooltip("Open 'https://github.com/nothings/stb'");
+                    }
+                    
+                    ImGui::Separator();
+
+                    if (ImGui::MenuItem("AUR30LA Engine")) {
+                       system("xdg-open https://github.com/ai-radu/AUR30LA");
+                    }
+                    if (ImGui::IsItemHovered()) {
+                        ImGui::SetTooltip("Open 'https://github.com/ai-radu/AUR30LA'");
+                    }
+                    
+                    if (ImGui::MenuItem("ai.radu")) {
+                       system("xdg-open https://linktr.ee/ai.radu");
+                    }
+                    if (ImGui::IsItemHovered()) {
+                        ImGui::SetTooltip("Open 'https://linktr.ee/ai.radu'");
+                    }   
+                    
+                    ImGui::EndMenu();
+                }
+                ImGui::EndMenuBar();
+            };
             ImGui::Text("Avg %.3f ms/frame (%.1f FPS)", 1000.0f / io.Framerate, io.Framerate);
-            ImGui::ColorEdit4("Clear Color", &clearColor.x);
-            
-            ImGui::SeparatorText("Camera");
-            ImGui::SliderFloat("Sensitivity", &cameraSystem->cameraSens, 0.01f, 1.0f, "%.2f");
-            ImGui::DragFloat2("Rotation", &cameraTransform.eulers.y, 0.01f);
-            ImGui::DragFloat3("Location", &pos.x, 0.01f);
-            
-            ImGui::SeparatorText("Others");
-            ImGui::SliderFloat("Movement Speed", &cameraSystem->moveSpeed, 0.01f, 1.0f, "%.2f");
-            ImGui::Checkbox("Dear ImGui Demo", &show_demo_window);
-            ImGui::Text("ESC exit\nWASD to move\nE up Q down, local Z axis\nRMB to rotate the camera\nScroll Wheel to change move speed\nPress & Hold CTRL to change from .01 to .1");
+            if (ImGui::CollapsingHeader("Engine")) {
+                ImGui::ColorEdit4("Clear Color", &clearColor.x);
+                
+                ImGui::SeparatorText("Camera");
+                ImGui::SliderFloat("Sensitivity", &cameraSystem->cameraSens, 0.01f, 1.0f, "%.2f");
+                ImGui::DragFloat2("Rotation", &cameraTransform.eulers.y, 0.01f);
+                ImGui::DragFloat3("Location", &pos.x, 0.01f);
+                
+                ImGui::SeparatorText("Others");
+                ImGui::SliderFloat("Movement Speed", &cameraSystem->moveSpeed, 0.01f, 1.0f, "%.2f");
+                ImGui::Checkbox("Dear ImGui Demo", &show_demo_window);
+                ImGui::Text("ESC exit\nWASD to move\nE up Q down, local Z axis\nRMB to rotate the camera\nScroll Wheel to change move speed\nPress & Hold CTRL to change from .01 to .1");
+            }
             ImGui::End();
         }
-       
-        motionSystem->update(
-            transformComponents,
-            physicsComponents,
-            16.67f/1000.0f);
 
-        double scroll = scrollY;
-        scrollY = 0.0;
+        #pragma region askExit
+        if (aur.askExit) {
+            #if AUR_DEBUG
+                glfwSetWindowShouldClose(window, true);
+            #else
+                ImGui::OpenPopup("Exit?");
+            #endif
+                aur.askExit = false;}
+
+        ImVec2 center = ImGui::GetMainViewport()->GetCenter();
+        ImGui::SetNextWindowPos(center, ImGuiCond_Appearing, ImVec2(0.5f, 0.5f));
+
+        if (ImGui::BeginPopupModal("Exit?", NULL, ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoMove))
+        {
+            ImGui::Text("All unsaved changes will be lost.\nThis operation cannot be undone.");
+            ImGui::Separator();
+            
+            if (ImGui::Button("OK", ImVec2(120, 0))) { glfwSetWindowShouldClose(window, true); }
+            ImGui::SetItemDefaultFocus();
+            
+            ImGui::SameLine();
+            if (ImGui::Button("Cancel", ImVec2(120, 0))) {
+                aur.askExit = false;
+                ImGui::CloseCurrentPopup(); }
+            
+            ImGui::EndPopup();}
+        #pragma endregion
+
+        motionSystem->update(transformComponents, physicsComponents, 16.67f/1000.0f);
+
+        double scroll = scrollY; scrollY = 0.0;
         
         bool should_close = cameraSystem->update(
             transformComponents,
@@ -218,18 +300,10 @@ void App::run() {
             16.67f/1000.0f,
             scroll);
         
-        if (should_close) {
-            break;
-        }
+        if (should_close) {break;}
 
-        // int display_w, display_h;
-        // glfwGetFramebufferSize(window, &display_w, &display_h);
-        glClearColor(
-            clearColor.r,
-            clearColor.g,
-            clearColor.b,
-            clearColor.a
-        );
+        glClearColor(clearColor.r, clearColor.g, clearColor.b, clearColor.a);
+        
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         renderSystem->update(transformComponents, renderComponents);
         
@@ -250,7 +324,7 @@ void App::set_up_glfw() {
 	glfwWindowHint(GLFW_DECORATED, GLFW_TRUE);
 	glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE);
     
-	window = glfwCreateWindow(screenW, screenH, "AUR30LA Engine Pre-Alpha v0.1", NULL, NULL);
+	window = glfwCreateWindow(screenW, screenH, aur.currentVer.c_str(), NULL, NULL);
     if (!window) {
         say("src/controller/app.cpp > set_up_glfw() ? !window", 3);
         glfwTerminate();
@@ -258,7 +332,7 @@ void App::set_up_glfw() {
     }
 	
     glfwMakeContextCurrent(window);
-    glfwSwapInterval(1); // Enable vsync
+    glfwSwapInterval(1);
     
     glfwSetWindowUserPointer(window, this);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);

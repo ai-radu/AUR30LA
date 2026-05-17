@@ -15,10 +15,8 @@ void RenderSystem::update(
         TransformComponent& transform = transformComponents[entity.first];
         glm::mat4 model = glm::mat4(1.0f);
 	    model = glm::translate(model, transform.position);
-        model = glm::rotate (
-            model, glm::radians(transform.eulers.z), 
-            { 0.0f, 0.0f, 1.0f }
-        );
+        model = glm::rotate (model, glm::radians(transform.eulers.z), { 0.0f, 0.0f, 1.0f });
+        
         glUniformMatrix4fv(modelLocation, 1, GL_FALSE, glm::value_ptr(model));
         
         glBindTexture(GL_TEXTURE_2D, entity.second.material);

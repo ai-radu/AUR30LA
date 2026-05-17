@@ -1,3 +1,9 @@
+#include "engine.h"
+Engine aur;
+
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb_image.h"
+
 #include "config.h"
 #include "controller/app.h"
 
@@ -6,6 +12,23 @@
 #include "components/render_component.h"
 #include "components/transform_component.h"
 
+void say(const std::string& words, int type, bool stay) {
+    if (stay) std::cout << "\r\033[K";
+
+    if (type == 0)
+        std::cout << "[DEBUG] ";
+    if (type == 1) 
+        std::cout << "[WATCH] ";
+    if (type == 2) 
+        std::cout << "[WARNING] ";
+    if (type == 3) 
+        std::cout << "[FATAL] ";
+    
+    std::cout << words;
+    
+    if (stay) std::cout << std::flush;
+	else std::cout << "\n";
+};
 std::string currentDateTime() {
     time_t now = time(0);
     struct tm tstruct;
@@ -25,11 +48,12 @@ std::string formatElapsed(long long ms) {
     return std::string(buf);
 }
 
-// main
 int main() {
+	#if AUR_DEBUG
     auto startTime = std::chrono::high_resolution_clock::now();
-    say("AUR30LA Engine Pre-Release v0.1\nstart---" + currentDateTime(), -1);
-    
+    say(std::string(aur.currentVer) + "\nstart---" + currentDateTime(), -1);
+    #endif
+
 	App* app = new App();
 
 	unsigned int cubeEntity = app->make_entity();
@@ -67,9 +91,11 @@ int main() {
     ImGui_ImplGlfw_Shutdown();
     ImGui::DestroyContext();
 	delete app;
-    
+
+	#if AUR_DEBUG
     auto endTime = std::chrono::high_resolution_clock::now();
     auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime).count();
     say("stop----" + currentDateTime() + "\ntimer-----------" + formatElapsed(elapsed) + "\nHave a nice day :)", -1);
-    return 0;
+    #endif
+	return 0;
 }
