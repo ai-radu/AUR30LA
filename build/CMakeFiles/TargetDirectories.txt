@@ -1,0 +1,4 @@
+/home/ai/AUR30LA/build/CMakeFiles/miniaudio.dir
+/home/ai/AUR30LA/build/CMakeFiles/aur.dir
+/home/ai/AUR30LA/build/CMakeFiles/edit_cache.dir
+/home/ai/AUR30LA/build/CMakeFiles/rebuild_cache.dir

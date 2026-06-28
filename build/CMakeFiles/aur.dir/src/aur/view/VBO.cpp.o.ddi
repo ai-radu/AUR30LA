@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles/aur.dir/src/aur/view/VBO.cpp.o",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}

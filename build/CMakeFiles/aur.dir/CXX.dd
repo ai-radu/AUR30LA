@@ -1,0 +1,49 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/aur.dir/includes/cmath.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/includes/imgui/backends/imgui_impl_glfw.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/includes/imgui/backends/imgui_impl_opengl3.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/includes/imgui/imgui_tables.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/includes/imgui/imgui_demo.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/includes/imgui/imgui_widgets.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/includes/imgui/imgui_draw.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/includes/imgui/imgui.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/includes/stb_image.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/src/main.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/src/aur/aur.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/src/aur/camera.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/src/aur/view/shader.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/src/aur/view/VAO.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/src/aur/view/VBO.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/src/aur/view/EBO.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/src/aur/view/texture.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/src/editor/viewportEditor.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/src/editor/materialMaker.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/src/editor/objectManipulator.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/src/editor/soundOrganizer.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/src/editor/projectSettings.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/src/editor/engineSettings.cpp.o: dyndep
+
+build CMakeFiles/aur.dir/src/project/project.cpp.o: dyndep
+

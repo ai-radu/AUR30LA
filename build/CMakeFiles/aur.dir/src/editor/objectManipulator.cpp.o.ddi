@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles/aur.dir/src/editor/objectManipulator.cpp.o",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}

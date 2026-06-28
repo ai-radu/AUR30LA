@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/ai/AUR30LA/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

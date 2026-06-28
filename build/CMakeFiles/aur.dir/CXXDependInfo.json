@@ -1,0 +1,155 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/home/ai/AUR30LA/build",
+	"dir-cur-src" : "/home/ai/AUR30LA",
+	"dir-top-bld" : "/home/ai/AUR30LA/build",
+	"dir-top-src" : "/home/ai/AUR30LA",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"/home/ai/AUR30LA/src",
+		"/home/ai/AUR30LA/src/aur",
+		"/home/ai/AUR30LA/src/aur/view",
+		"/home/ai/AUR30LA/src/editor",
+		"/home/ai/AUR30LA/src/project",
+		"/home/ai/AUR30LA/assets",
+		"/home/ai/AUR30LA/includes",
+		"/home/ai/AUR30LA/includes/glad",
+		"/home/ai/AUR30LA/includes/glad/include",
+		"/home/ai/AUR30LA/includes/imgui",
+		"/home/ai/AUR30LA/includes/imgui/backends"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "/home/ai/AUR30LA/build/CMakeFiles/aur.dir",
+	"sources" : 
+	{
+		"CMakeFiles/aur.dir/includes/cmath.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/includes/cmath.cpp"
+		},
+		"CMakeFiles/aur.dir/includes/imgui/backends/imgui_impl_glfw.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/includes/imgui/backends/imgui_impl_glfw.cpp"
+		},
+		"CMakeFiles/aur.dir/includes/imgui/backends/imgui_impl_opengl3.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/includes/imgui/backends/imgui_impl_opengl3.cpp"
+		},
+		"CMakeFiles/aur.dir/includes/imgui/imgui.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/includes/imgui/imgui.cpp"
+		},
+		"CMakeFiles/aur.dir/includes/imgui/imgui_demo.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/includes/imgui/imgui_demo.cpp"
+		},
+		"CMakeFiles/aur.dir/includes/imgui/imgui_draw.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/includes/imgui/imgui_draw.cpp"
+		},
+		"CMakeFiles/aur.dir/includes/imgui/imgui_tables.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/includes/imgui/imgui_tables.cpp"
+		},
+		"CMakeFiles/aur.dir/includes/imgui/imgui_widgets.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/includes/imgui/imgui_widgets.cpp"
+		},
+		"CMakeFiles/aur.dir/includes/stb_image.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/includes/stb_image.cpp"
+		},
+		"CMakeFiles/aur.dir/src/aur/aur.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/src/aur/aur.cpp"
+		},
+		"CMakeFiles/aur.dir/src/aur/camera.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/src/aur/camera.cpp"
+		},
+		"CMakeFiles/aur.dir/src/aur/view/EBO.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/src/aur/view/EBO.cpp"
+		},
+		"CMakeFiles/aur.dir/src/aur/view/VAO.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/src/aur/view/VAO.cpp"
+		},
+		"CMakeFiles/aur.dir/src/aur/view/VBO.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/src/aur/view/VBO.cpp"
+		},
+		"CMakeFiles/aur.dir/src/aur/view/shader.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/src/aur/view/shader.cpp"
+		},
+		"CMakeFiles/aur.dir/src/aur/view/texture.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/src/aur/view/texture.cpp"
+		},
+		"CMakeFiles/aur.dir/src/editor/engineSettings.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/src/editor/engineSettings.cpp"
+		},
+		"CMakeFiles/aur.dir/src/editor/materialMaker.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/src/editor/materialMaker.cpp"
+		},
+		"CMakeFiles/aur.dir/src/editor/objectManipulator.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/src/editor/objectManipulator.cpp"
+		},
+		"CMakeFiles/aur.dir/src/editor/projectSettings.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/src/editor/projectSettings.cpp"
+		},
+		"CMakeFiles/aur.dir/src/editor/soundOrganizer.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/src/editor/soundOrganizer.cpp"
+		},
+		"CMakeFiles/aur.dir/src/editor/viewportEditor.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/src/editor/viewportEditor.cpp"
+		},
+		"CMakeFiles/aur.dir/src/main.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/src/main.cpp"
+		},
+		"CMakeFiles/aur.dir/src/project/project.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/ai/AUR30LA/src/project/project.cpp"
+		}
+	}
+}

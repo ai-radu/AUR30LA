@@ -1,0 +1,164 @@
+[
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/cc -DIMGUI_IMPL_OPENGL_LOADER_GLAD -o CMakeFiles/miniaudio.dir/includes/miniaudio.c.o -c /home/ai/AUR30LA/includes/miniaudio.c",
+  "file": "/home/ai/AUR30LA/includes/miniaudio.c",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/miniaudio.dir/includes/miniaudio.c.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/includes/cmath.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/includes/cmath.cpp.o -c /home/ai/AUR30LA/includes/cmath.cpp",
+  "file": "/home/ai/AUR30LA/includes/cmath.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/includes/cmath.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/cc -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -O3 -Wno-array-bounds -Wno-stringop-overflow -o CMakeFiles/aur.dir/includes/glad/glad.c.o -c /home/ai/AUR30LA/includes/glad/glad.c",
+  "file": "/home/ai/AUR30LA/includes/glad/glad.c",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/includes/glad/glad.c.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/includes/imgui/backends/imgui_impl_glfw.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/includes/imgui/backends/imgui_impl_glfw.cpp.o -c /home/ai/AUR30LA/includes/imgui/backends/imgui_impl_glfw.cpp",
+  "file": "/home/ai/AUR30LA/includes/imgui/backends/imgui_impl_glfw.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/includes/imgui/backends/imgui_impl_glfw.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/includes/imgui/backends/imgui_impl_opengl3.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/includes/imgui/backends/imgui_impl_opengl3.cpp.o -c /home/ai/AUR30LA/includes/imgui/backends/imgui_impl_opengl3.cpp",
+  "file": "/home/ai/AUR30LA/includes/imgui/backends/imgui_impl_opengl3.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/includes/imgui/backends/imgui_impl_opengl3.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/includes/imgui/imgui_tables.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/includes/imgui/imgui_tables.cpp.o -c /home/ai/AUR30LA/includes/imgui/imgui_tables.cpp",
+  "file": "/home/ai/AUR30LA/includes/imgui/imgui_tables.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/includes/imgui/imgui_tables.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/includes/imgui/imgui_demo.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/includes/imgui/imgui_demo.cpp.o -c /home/ai/AUR30LA/includes/imgui/imgui_demo.cpp",
+  "file": "/home/ai/AUR30LA/includes/imgui/imgui_demo.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/includes/imgui/imgui_demo.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/includes/imgui/imgui_widgets.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/includes/imgui/imgui_widgets.cpp.o -c /home/ai/AUR30LA/includes/imgui/imgui_widgets.cpp",
+  "file": "/home/ai/AUR30LA/includes/imgui/imgui_widgets.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/includes/imgui/imgui_widgets.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/includes/imgui/imgui_draw.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/includes/imgui/imgui_draw.cpp.o -c /home/ai/AUR30LA/includes/imgui/imgui_draw.cpp",
+  "file": "/home/ai/AUR30LA/includes/imgui/imgui_draw.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/includes/imgui/imgui_draw.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/includes/imgui/imgui.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/includes/imgui/imgui.cpp.o -c /home/ai/AUR30LA/includes/imgui/imgui.cpp",
+  "file": "/home/ai/AUR30LA/includes/imgui/imgui.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/includes/imgui/imgui.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/includes/stb_image.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/includes/stb_image.cpp.o -c /home/ai/AUR30LA/includes/stb_image.cpp",
+  "file": "/home/ai/AUR30LA/includes/stb_image.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/includes/stb_image.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/cc -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -O3 -Wno-array-bounds -Wno-stringop-overflow -o CMakeFiles/aur.dir/includes/miniaudio.c.o -c /home/ai/AUR30LA/includes/miniaudio.c",
+  "file": "/home/ai/AUR30LA/includes/miniaudio.c",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/includes/miniaudio.c.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/src/main.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/src/main.cpp.o -c /home/ai/AUR30LA/src/main.cpp",
+  "file": "/home/ai/AUR30LA/src/main.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/src/aur/aur.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/src/aur/aur.cpp.o -c /home/ai/AUR30LA/src/aur/aur.cpp",
+  "file": "/home/ai/AUR30LA/src/aur/aur.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/src/aur/aur.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/src/aur/camera.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/src/aur/camera.cpp.o -c /home/ai/AUR30LA/src/aur/camera.cpp",
+  "file": "/home/ai/AUR30LA/src/aur/camera.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/src/aur/camera.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/src/aur/view/shader.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/src/aur/view/shader.cpp.o -c /home/ai/AUR30LA/src/aur/view/shader.cpp",
+  "file": "/home/ai/AUR30LA/src/aur/view/shader.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/src/aur/view/shader.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/src/aur/view/VAO.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/src/aur/view/VAO.cpp.o -c /home/ai/AUR30LA/src/aur/view/VAO.cpp",
+  "file": "/home/ai/AUR30LA/src/aur/view/VAO.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/src/aur/view/VAO.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/src/aur/view/VBO.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/src/aur/view/VBO.cpp.o -c /home/ai/AUR30LA/src/aur/view/VBO.cpp",
+  "file": "/home/ai/AUR30LA/src/aur/view/VBO.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/src/aur/view/VBO.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/src/aur/view/EBO.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/src/aur/view/EBO.cpp.o -c /home/ai/AUR30LA/src/aur/view/EBO.cpp",
+  "file": "/home/ai/AUR30LA/src/aur/view/EBO.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/src/aur/view/EBO.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/src/aur/view/texture.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/src/aur/view/texture.cpp.o -c /home/ai/AUR30LA/src/aur/view/texture.cpp",
+  "file": "/home/ai/AUR30LA/src/aur/view/texture.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/src/aur/view/texture.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/src/editor/viewportEditor.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/src/editor/viewportEditor.cpp.o -c /home/ai/AUR30LA/src/editor/viewportEditor.cpp",
+  "file": "/home/ai/AUR30LA/src/editor/viewportEditor.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/src/editor/viewportEditor.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/src/editor/materialMaker.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/src/editor/materialMaker.cpp.o -c /home/ai/AUR30LA/src/editor/materialMaker.cpp",
+  "file": "/home/ai/AUR30LA/src/editor/materialMaker.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/src/editor/materialMaker.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/src/editor/objectManipulator.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/src/editor/objectManipulator.cpp.o -c /home/ai/AUR30LA/src/editor/objectManipulator.cpp",
+  "file": "/home/ai/AUR30LA/src/editor/objectManipulator.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/src/editor/objectManipulator.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/src/editor/soundOrganizer.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/src/editor/soundOrganizer.cpp.o -c /home/ai/AUR30LA/src/editor/soundOrganizer.cpp",
+  "file": "/home/ai/AUR30LA/src/editor/soundOrganizer.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/src/editor/soundOrganizer.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/src/editor/projectSettings.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/src/editor/projectSettings.cpp.o -c /home/ai/AUR30LA/src/editor/projectSettings.cpp",
+  "file": "/home/ai/AUR30LA/src/editor/projectSettings.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/src/editor/projectSettings.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/src/editor/engineSettings.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/src/editor/engineSettings.cpp.o -c /home/ai/AUR30LA/src/editor/engineSettings.cpp",
+  "file": "/home/ai/AUR30LA/src/editor/engineSettings.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/src/editor/engineSettings.cpp.o"
+},
+{
+  "directory": "/home/ai/AUR30LA/build",
+  "command": "/usr/bin/c++ -DAUR_DEVELOPER=1 -DAUR_PROJECT=0 -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/ai/AUR30LA/src -I/home/ai/AUR30LA/src/aur -I/home/ai/AUR30LA/src/aur/view -I/home/ai/AUR30LA/src/editor -I/home/ai/AUR30LA/src/project -I/home/ai/AUR30LA/assets -I/home/ai/AUR30LA/includes -I/home/ai/AUR30LA/includes/glad -I/home/ai/AUR30LA/includes/glad/include -I/home/ai/AUR30LA/includes/imgui -I/home/ai/AUR30LA/includes/imgui/backends -std=c++23 -O3 -Wno-array-bounds -Wno-stringop-overflow -fmodules-ts -fmodule-mapper=CMakeFiles/aur.dir/src/project/project.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/aur.dir/src/project/project.cpp.o -c /home/ai/AUR30LA/src/project/project.cpp",
+  "file": "/home/ai/AUR30LA/src/project/project.cpp",
+  "output": "/home/ai/AUR30LA/build/CMakeFiles/aur.dir/src/project/project.cpp.o"
+}
+]
